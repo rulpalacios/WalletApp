@@ -12,7 +12,8 @@ export default class Example extends Component {
             error: null,
             form: {
                 description: '',
-                amount: ''
+                amount: '',
+                wallet_id: '1'
             }
         }
         this.handleChange = this.handleChange.bind(this)
