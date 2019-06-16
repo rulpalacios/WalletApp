@@ -62369,7 +62369,7 @@ function (_Component) {
                   body: JSON.stringify(this.state.form)
                 };
                 _context.next = 5;
-                return fetch('http://localhost:8000/api/transfer', config);
+                return fetch('https://walletlaravel.herokuapp.com/api/transfer', config);
 
               case 5:
                 res = _context.sent;
@@ -62424,7 +62424,7 @@ function (_Component) {
               case 0:
                 _context2.prev = 0;
                 _context2.next = 3;
-                return fetch('http://localhost:8000/api/wallet');
+                return fetch('https://walletlaravel.herokuapp.com/api/wallet');
 
               case 3:
                 res = _context2.sent;
