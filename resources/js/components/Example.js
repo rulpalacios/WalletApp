@@ -30,7 +30,7 @@ export default class Example extends Component {
                 },
                 body: JSON.stringify(this.state.form)
             }
-            let res = await fetch('http://localhost:8000/api/transfer', config)
+            let res = await fetch('https://walletlaravel.herokuapp.com/api/transfer', config)
             let data = await res.json()
             
             this.setState({
@@ -52,7 +52,7 @@ export default class Example extends Component {
 
     async componentDidMount(){
         try {
-            let res = await fetch('http://localhost:8000/api/wallet')
+            let res = await fetch('https://walletlaravel.herokuapp.com/api/wallet')
             let data = await res.json()
 
             this.setState({
